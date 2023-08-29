@@ -1,0 +1,174 @@
+.body-moments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: var(--color-grisPizarra);
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+.title-momentos {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: var(--color-grisClaro);
+    font-family: "titulo01";
+    font-size: 100px;
+}
+.container-moments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 1200px;
+}
+.container-moments .title-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "textos";
+    color: white;
+}
+.container-moments .title-card h1 {
+    margin: 0;
+  }
+.container-moments .card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: 1s ease;
+}
+.container-moments .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+.container-moments .card:hover .box {
+    transform: rotateY(180deg);
+}
+.container-moments .card .box .imgMoments img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.container-moments .card .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-grisPizarra);
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+.container-moments .card .box .content div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, var(--color-beigeRosado), var(--color-grisPalido));
+    transform: translateZ(100px);
+    border-radius: 10px;
+    margin: 0;
+}
+.container-moments .card .box .content div p {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .title-momentos {
+        font-size: 50px;
+    }
+    .container-moments {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transform-style: preserve-3d;
+        width: 500px;
+    }
+    .container-moments .title-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "textos";
+        color: white;
+    }
+    .container-moments .title-card h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+    .container-moments .card {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        margin: 20px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        transition: 1s ease;
+    }
+    .container-moments .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: 1s ease;
+    }
+    
+    .container-moments .card .box .imgMoments img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .container-moments .card .box .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-grisPizarra);
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+    }
+    .container-moments .card .box .content div {
+        transform-style: preserve-3d;
+        padding: 20px;
+        background: linear-gradient(45deg, var(--color-beigeRosado), var(--color-grisPalido));
+        transform: translateZ(100px);
+        border-radius: 10px;
+        margin: 13px;
+    }
+    .container-moments .card .box .content div p {
+        color: black;
+        font-size: 13px;
+        margin: 0;
+    }
+}

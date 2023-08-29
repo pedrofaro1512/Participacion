@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "titulos";
+    src: url('../Fonts/SIFONN_BASIC.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "textos";
+    src: url('../Fonts/Forum-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url('../Fonts/PinyonScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "titulo01";
+    src: url('../Fonts/Ballet.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "titulo02";
+    src: url('../Fonts/Adine Kirnberg.ttf') format('truetype');
+}

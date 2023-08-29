@@ -1,0 +1,105 @@
+.countdown-timer-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding-bottom: 50px;
+}
+  
+.countdown-item {
+    text-align: center;
+}
+
+.pizarra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    background-color: var(--color-grisPizarra);
+    border-radius: 10px;
+}
+.rosado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    background-color: var(--color-beigeRosado);
+    border-radius: 10px;
+}
+
+.countdown-item h4 {
+    font-size: 60px; /* Ajusta el tamaño de fuente de los números según tus preferencias */
+    margin-bottom: 85px; /* Espacio inferior para separar el número de las palabras */
+    color: var(--color-grisClaro);
+}
+  
+.countdown-item span {
+    display: block;
+    font-size: 40px;
+    font-family: "textos";
+}
+  
+.title-contador {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-family: "titulo01";
+    font-size: 100px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .title-contador {
+        font-family: "titulo01";
+        font-size: 50px;
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
+    .countdown-timer-horizontal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+        margin: 0 auto; /* Centrar horizontalmente */
+        padding-bottom: 30px;
+    }
+      
+    .countdown-item {
+        text-align: center;
+    }
+    
+    .pizarra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 40px;
+        background-color: var(--color-grisPizarra);
+        border-radius: 10px;
+    }
+    .rosado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 40px;
+        background-color: var(--color-beigeRosado);
+        border-radius: 10px;
+    }
+    
+    .countdown-item h4 {
+        font-size: 30px; /* Ajusta el tamaño de fuente de los números según tus preferencias */
+        margin-bottom: 45px; /* Espacio inferior para separar el número de las palabras */
+        color: var(--color-grisClaro);
+    }
+      
+    .countdown-item span {
+        display: block;
+        font-size: 15px;
+        font-family: "textos";
+    }
+}
+  
