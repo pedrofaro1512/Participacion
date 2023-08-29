@@ -1,0 +1,15 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 80px; /* Ajusta la distancia desde la parte inferior */
+    right: 24px;
+    z-index: 1000; /* Asegura que el chatbot esté sobre otros elementos */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Ajusta el ancho según tus preferencias */
+}
+.chatbot-container.hidden {
+    display: none;
+}

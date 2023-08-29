@@ -1,0 +1,164 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-nosotros {
+    text-align: center;
+    margin-top: 20px;
+    font-family: "titulo01";
+    font-size: 100px;
+}
+
+.nosotros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.nosotros-text {
+    flex: 1;
+    padding: 10px;
+    max-width: 50%;
+    margin-left: -300px;
+    margin-right: 250px;
+}
+.nosotros-text p {
+    font-family: "textos";
+    font-size: 20px;
+}
+
+.nosotros-body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.nosotros-body ul {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 450px;
+    height: 180px;
+}
+.nosotros-body ul li {
+    list-style: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin: -50px;
+    transform: rotate(45deg);
+    transition: .5s;
+    overflow: hidden;
+    opacity: .5;
+}
+.nosotros-body ul li:hover {
+    opacity: 1;
+}
+
+.nosotros-body ul li.item1 {
+    top: 0;
+    left: 0;
+}
+.nosotros-body ul li.item2 {
+    bottom: 0;
+    left: 25%;
+}
+.nosotros-body ul li.item3 {
+    top: 0;
+    left: 50%;
+}
+.nosotros-body ul li.item4 {
+    bottom: 0;
+    left: 77%;
+}
+.nosotros-body ul li.item5 {
+    top: 145%;
+    left: 50%;
+}
+
+.nosotros-body ul li .bg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.42);
+}
+
+.nosotros-body ul li.item1 .bg {
+    background: url(../../asstes/img/Nos01.jpg);
+    background-size: cover;
+}
+.nosotros-body ul li.item2 .bg {
+    background: url(../../asstes/img/Nos02.jpg);
+    background-size: cover;
+}
+.nosotros-body ul li.item3 .bg {
+    background: url(../../asstes/img/Nos03.jpg);
+    background-size: cover;
+}
+.nosotros-body ul li.item4 .bg {
+    background: url(../../asstes/img/Nos07.jpg);
+    background-size: cover;
+}
+.nosotros-body ul li.item5 .bg {
+    background: url(../../asstes/img/Nos05.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 786px) {
+    .title-nosotros {
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: -30px;
+    }
+    .nosotros-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nosotros-text {
+        max-width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+    .nosotros-text p {
+        font-size: 10px;
+    }
+    .nosotros-body {
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .nosotros-body ul {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        margin-top: 50px;
+        padding-top: 0;
+        width: 270px;
+        height: 60px;
+    }
+    .nosotros-body ul li {
+        list-style: none;
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        margin: -50px;
+        transform: rotate(45deg);
+        transition: .5s;
+        overflow: hidden;
+        opacity: .5;
+    }
+    .nosotros-body ul li.item5 {
+        display: none;
+    }
+}
+
+
