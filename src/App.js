@@ -7,14 +7,12 @@ import Comentarios from "./Components/Comentarios/Comentarios";
 import Home from "./Components/Home/Home";
 import Rueda from "./Components/Rueda/Rueda";
 import Reproductor from "./Components/Reproductor/Reproductor";
-//import ChatBot from "./Components/ChatBot/ChatBot";
 
-import { QuestionCircleOutlined, UpOutlined } from "@ant-design/icons";
-import { FloatButton, Button, BackTop } from "antd";
+import { UpOutlined } from "@ant-design/icons";
+import { Button, BackTop } from "antd";
 
 function App() {
   const [showBackTop, setShowBackTop] = useState(false);
-  const [showChatBot, setShowChatBot] = useState(false);
 
   // Código para desabilitar el click derecho
   const disableRightClick = (event) => {
@@ -73,18 +71,6 @@ function App() {
         </BackTop>
       </>
 
-      {/* {showChatBot && <ChatBot isVisible={showChatBot} />} */}
-      {/* <>
-        <FloatButton
-          icon={<QuestionCircleOutlined />}
-          type="primary"
-          style={{
-            right: 24,
-            bottom: 110,
-          }}
-          onClick={() => setShowChatBot(!showChatBot)}
-        />
-      </> */}
       <Reproductor />
     </div>
   );
