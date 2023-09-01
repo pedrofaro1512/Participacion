@@ -1,0 +1,45 @@
+.carousel-container {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding-top: 30px;
+    font-size: 100px;
+    font-family: "titulo01";
+}
+
+.image-overlay-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding-bottom: 30px;
+    font-size: 100px;
+    font-family: "titulo01";
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .image-overlay{
+        padding-top: 20px;
+      font-size: 35px;
+    }
+    .image-overlay-bottom {
+        font-size: 40px;
+    }
+}

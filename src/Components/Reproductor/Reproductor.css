@@ -1,0 +1,22 @@
+.Repo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-beigeRosado);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .Repo {
+        position: fixed;
+        bottom: 1px;
+        right: -70px;
+        padding: 0;
+        border-radius: 8px;
+        background-color: transparent;
+        transform: scale(0.5);
+    }
+}
+  
